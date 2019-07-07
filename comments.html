@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="mystyle.css" type="text/css">
+    <title>Comments</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Paul Newman">
+</head>
+
+<body>
+    <header>
+        <!-- Internet/Web Development, 23163, pau2212287  -->
+        <h1>AGRIGENTO, SICILY</h1><br>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="todo.html">Things to Do</a>
+            <a href="history.html">History</a>
+            <a href="comments.html">Comments</a>
+        </nav>
+    </header>
+    <!-- I only wanted to change the background color on two of the main sections -->
+    <main style='background-color: white'>
+        <h2>We would love your input from your trip to Agrigento, Sicily!</h2>
+        <form action="https://secure.riosalado.edu/cis-course-resources/postscript.aspx" method="post">
+            <h3>Contact Details</h3>
+            <label>First Name: <input type="text" name="FirstName"></label><br>
+            <label>Last Name: <input type="text" name="LastName"></label><br>
+            <label>Email Address: <input type="email" name="UserEmail"></label>
+
+            <h3>Rate your trip</h3>
+            <label>Please rate your trip - 1 being the best and 4 being the worst:<br><input type="radio" name="category1" value="best"> 1</label><br>
+            <label><input type="radio" name="category2" value="good"> 2</label><br>
+            <label><input type="radio" name="category3" value="average"> 3</label><br>
+            <label><input type="radio" name="category4" value="worst"> 4</label>
+            <h3>Comments</h3>
+            <label>Please tell us about your trip below:<br><textarea rows="4" cols="50" name="comments"></textarea></label>
+            <h3>Sign up for our Newsletter</h3>
+            <p style="text-align:left">Would you like to sign up for our monthly newsletter and recieve updates on other things to do in Agrigento?</p>
+            <label><input type="checkbox" name="newsletter" value="yes"> Yes, I would like to sign up for the newsletter!</label><br>
+            <input type="button" onclick="myAlert()" value="Submit">
+        </form>
+    </main>
+    <footer>
+
+        <p>Contact Info: Pau2212287@maricopa.edu</p>
+
+
+
+        <p><small>Copyright &copy;2019 by <mark>Paul Newman</mark></small></p>
+        <p id="lastMod"></p>
+        <script src="myjava.js"></script>
+    </footer>
+</body>
+
+
+</html>

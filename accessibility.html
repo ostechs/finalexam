@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Internet/Web Development Level 1, 23163, Lesson 11 -->
+    <title>Accessibility</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Paul Newman">
+    <style>
+        body {
+            background-color: #7700DB;
+            font-family: "Arial", sans-serif;
+            font-size: 20px;
+            color: #0CB0C6;
+        }
+        
+        header {
+            width: 80%;
+            padding: 20px 0px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        main {
+            width: 80%;
+            padding: 30px 0px;
+            margin: 0 auto;
+        }
+        
+        footer {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+        }
+        
+        nav a {
+            margin: 10px;
+            padding: 2px;
+            background-color: #FFFF00;
+            color: #9D85FF;
+            font-size: 18px;
+            text-decoration: none;
+        }
+        
+        table {
+            width: 100%;
+        }
+        
+        table,
+        th,
+        td {
+            border: 1px solid #FFF;
+            background-color: #FFFF00;
+            color: #9D85FF;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        
+        th {
+            background-color: #6B6B00;
+            color: #9D85FF;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <!-- Navigation starts here -->
+        <nav><a href="index.html">Home</a> <a href="menu.html">Menu</a> <a href="events.html">Events</a> <a href="about.html">About</a> <a href="accessibility.html">Accessibility</a></nav>
+        <!-- Navigation ends here  -->
+    </header>
+
+    <main>
+        <h2>Our Commitment to Accessibility</h2>
+
+        <p>Cucina Siciliana is committed to providing a website that is accessible to all regardless of the audience’s technology or ability. Although we try to adhere to the accepted guidelines and standards, it is not always possible to do so in all areas
+            of our website. We believe web accessibility is important so that everyone can have an opportunity to contribute to the web. We are continually looking for ways to make all areas accessible to all.</p>
+
+        <img src="access-image.jpg" alt="Accessibility" style="display:block; margin:auto; width:300px;">
+        <p style="text-align:center;">By <a href="https://pixabay.com/en/accessibility-disability-1682903/">Renma</a></p>
+
+        <h3>Web Users and Web Accessibility</h3>
+        <table>
+            <tr>
+                <th>Disability</th>
+                <th>Description</th>
+                <th>Common Barriers</th>
+                <th>Accessibility Principles to Apply</th>
+            </tr>
+            <tr>
+                <td>Auditory</td>
+                <td>People who are deaf or hard of hearing</td>
+                <td>Unable to fully interact with websites</td>
+                <td>The Perceivable principle – Captions could be added to videos and photos</td>
+            </tr>
+            <tr>
+                <td>Cognitive and Neurological</td>
+                <td>Autism spectrum disorder, learning disabilities and mental illness</td>
+                <td>Complex page navigation or moving content that can’t be turned off</td>
+                <td>Operable Principle – Stop or pause buttons added to videos, keep navigation simple</td>
+            </tr>
+            <tr>
+                <td>Physical</td>
+                <td>Motor disabilities</td>
+                <td>Time limits on tasks, lack of full support for keyboard or mouse</td>
+                <td>Operable Principle – keep time limited tasks to a minimum or none, allow full function of keyboard or mouse even if meant for touch screen</td>
+            </tr>
+            <tr>
+                <td>Speech</td>
+                <td>People with mutism, apraxia or cluttering</td>
+                <td>Speech interaction</td>
+                <td>Operable principle – allow email ass a contact info also not just phone number, allow alternative ways to interact with speech interaction sections</td>
+            </tr>
+            <tr>
+                <td>Visual</td>
+                <td>Blindness, color blind and deaf blindness</td>
+                <td>Images without text alternatives, missing non-visual cues and no custom color combinations</td>
+                <td>Understandable principle – present info in multiple modes with non-visual cues, use custom color combinations and text alternatives on images</td>
+            </tr>
+        </table>
+
+        <h1>Survey</h1>
+        <form name="myForm" id="test" action="https://secure.riosalado.edu/cis-course-resources/postscript.aspx" method="post">
+            <p>We'd love to hear from you regarding the Accessibility of our website. If you'd like, please take this brief survey and leave us your name and email address if you'd like us to get back in contact with you.</p>
+
+            <fieldset>
+                <h2>
+                    <legend>Feedback Type</legend>
+                </h2>
+                <p>What type of feedback would you like to share? <em>Please select all that apply</em>:</p>
+                <!--I put the label element into the forms so it will help those with screen readers when form control is accessed and it can also be clickable with a mouse-->
+                <label><input type="checkbox" name="Type" value="Suggestion"> Suggestion on how to improve Accessibility on the website</label><br>
+                <label><input type="checkbox" name="Type" value="Issue"> Issue with the Accessibility of the website</label><br>
+                <label><input type="checkbox" name="Type" value="Comment"> Share a comment about how our Accessibility features helped you or others</label><br>
+            </fieldset>
+            <fieldset>
+                <!-- I added a fieldset and legend to provide a visual and structural grouping. The legend is repeated to screen readers-->
+                <h3>
+                    <legend>Satisfaction</legend>
+                </h3>
+                <p>How satisfied are you with the Accessibility features we provide?</p>
+
+                <label><input type="radio" name="Satisfaction" value="5 - Very Satisfied"> 5 - Very Satisfied</label><br>
+                <label><input type="radio" name="Satisfaction" value="4"> 4</label><br>
+                <label><input type="radio" name="Satisfaction" value="3"> 3</label><br>
+                <label><input type="radio" name="Satisfaction" value="2"> 2</label><br>
+                <label><input type="radio" name="Satisfaction" value="1"> 1</label><br>
+                <label><input type="radio" name="Satisfaction" value="0 - Very Dissatisfied"> 0 - Very Dissatisfied</label><br>
+            </fieldset>
+            <h3>Improvements</h3>
+            <p><label>Please enter any feedback you have to provide you with a better service:<br>
+
+                <textarea name="Feedback" rows="5" cols="60"></textarea></label></p><br>
+
+            <h3>Contact Details (Optional)</h3>
+            <label>Name: <input type="text" name="FirstName"></label><br> <label>Email Address: <input type="email" name="EmailAddress"></label><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+    <footer>
+        <p style="text-align:center;">Renma, Cris (2016). [Untitled photograph of different disabilities]. Retrieved from https://pixabay.com/en/accessibility-disability-1682903/</p>
+    </footer>
+</body>
+
+</html>

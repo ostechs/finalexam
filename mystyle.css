@@ -1,0 +1,84 @@
+/* Internet/Web Development, 23163, pau2212287 */
+
+h1 {
+    color: rgb(141, 13, 13);
+    background-image: url('images/banner.jpg');
+    background-position: center;
+    background-repeat: repeat;
+    background-color: lightblue;
+    background-size: 10% auto;
+    padding: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 80%;
+    margin: auto;
+    font-size: 50px;
+    text-shadow: 5px 5px #558ABB;
+    ;
+}
+
+header,
+footer {
+    text-align: center
+}
+
+Body {
+    background-color: white;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url("images/main3.jpg");
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav a:link,
+nav a:visited {
+    color: rgb(206, 23, 23);
+    background-color: white;
+    font-size: medium;
+    margin: 10px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rgb(100, 0, 83);
+    background-color: rgb(69, 205, 240);
+}
+
+main img {
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+}
+
+h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+}
+
+footer {
+    font-weight: bold;
+}
+
+table,
+th,
+td {
+    border: 3px solid black;
+    border-collapse: collapse;
+    background-color: beige;
+}
+
+th,
+td {
+    padding: 5px;
+    text-align: center;
+}
+
+table {
+    border-spacing: 5px;
+}
